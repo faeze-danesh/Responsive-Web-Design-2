@@ -1,0 +1,1348 @@
+﻿html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, a
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body {
+    direction: rtl;
+}
+
+@font-face {
+    font-family: IranianSans;
+    src: url('font/IranianSans.ttf');
+}
+
+.logo-img {
+    margin: 7px auto;
+}
+
+.searchBox {
+    width: 560px;
+    height: 46px;
+    border-radius: 10px;
+    font-family: IranianSans;
+    text-align: right;
+    font-size: medium;
+    padding: 0px 10px;
+    background-color: #e9e9e9;
+    color: #9b9b9b;
+    margin: 0px auto;
+}
+
+    .searchBox input {
+        padding: 9px;
+        outline: none;
+        border: 1px solid transparent;
+        background-color: #e9e9e9;
+    }
+
+.EnterRegister-Box {
+    border: 1px solid #eddddd;
+    width: 150px;
+    height: 46px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 14px;
+    color: gray;
+    font-family: 'IranianSans';
+    font-size: small;
+    margin: 0px 200px 0px 0px;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    border-right: 1px solid #d0b9b9;
+    display: inline-block;
+    width: 50px;
+    margin: 7px 0px;
+}
+
+#mainMenu {
+    height: 41px;
+    margin: 20px 0px;
+    border-bottom: 1px solid #f2f2f2;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+    #mainMenu > .nav-items {
+    }
+
+        #mainMenu > .nav-items > .nav-item {
+            float: right;
+            position: relative;
+        }
+
+            #mainMenu > .nav-items > .nav-item .digi-kalaha {
+                font-weight: 900;
+            }
+
+            #mainMenu > .nav-items > .nav-item > .nav-link {
+                color: gray;
+                text-decoration: none;
+                display: block;
+                padding: 15px 7px 15px 30px;
+                font-family: IranianSans;
+                font-size: 13px;
+                position: relative;
+            }
+
+                #mainMenu > .nav-items > .nav-item > .nav-link:after {
+                    height: 2px;
+                    background-color: red;
+                    width: 0px;
+                    content: ' ';
+                    font-size: 0px;
+                    display: block;
+                    bottom: 0px;
+                    position: absolute;
+                }
+
+                #mainMenu > .nav-items > .nav-item > .nav-link:hover::after {
+                    width: 100%;
+                    transition: all .5s;
+                    left: 0px;
+                    right: 0px;
+                    margin: 0px auto
+                }
+
+    #mainMenu .layer2 {
+        top: 41px;
+        bottom: 0px;
+        width: 60vw;
+        height: 50vh;
+        /* border: 2px solid blue;*/
+        background-color: white;
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        flex-wrap: wrap;
+        box-shadow: 2px 2px 10px rgb(43 42 42 / 70%);
+    }
+
+    #mainMenu .nav-items .nav-item:hover .layer2 {
+        display: flex;
+    }
+
+.layer2 .subMenuBox {
+    /*border: 2px solid red;*/
+}
+
+
+
+.amazing {
+    float: left !important;
+}
+
+.layer2 .subMenuBox .layer2-link {
+    display: block;
+    text-align: right;
+    color: #00bfd6;
+    font-size: 13px;
+    padding: 5px 5px;
+    text-decoration: none;
+    font-family: 'IranianSans';
+    font-weight: 600;
+}
+
+    .layer2 .subMenuBox .layer2-link:hover {
+        border-bottom: 1px dashed #00bfd6;
+    }
+
+    .layer2 .subMenuBox .layer2-link:before {
+        content: ' >';
+        padding-right: 10px;
+        padding-right: 10px;
+        display: inline-block;
+    }
+
+.layer2 .subMenuBox .layer3-link {
+    display: block;
+    text-align: right;
+    color: #4a5f73;
+    font-size: 11px;
+    font-weight: 400;
+    padding: 7px 10px;
+    font-family: 'IranianSans';
+}
+
+.main-container .owl-carousel {
+    width: 90%;
+    margin: 0px auto;
+    height: 155px;
+}
+
+.main-container .item {
+    width: 130px;
+}
+
+.first-box {
+    width: 126px;
+    text-align: center;
+    height: 150px;
+}
+
+    .first-box .box-link {
+        text-decoration: none;
+    }
+
+        .first-box .box-link .box-imag {
+            border-radius: 60px;
+            padding: 2px;
+            width: 100px;
+            border: 3px solid purple;
+            margin: 0px auto;
+        }
+
+        .first-box .box-link .box-detail {
+            text-decoration: none;
+            color: black;
+            font-family: 'IranianSans';
+            font-size: small;
+            padding: 10px 0px;
+        }
+
+.slider {
+}
+
+.ruler-container {
+    width: 85%;
+    margin: 0px auto;
+}
+
+.second-box {
+    width: 96px;
+    text-align: center;
+    height: 150px;
+}
+
+    .second-box .box-link .box-imag2 {
+        border-radius: 20px;
+        width: 60px;
+        margin: 40px auto 14px;
+    }
+
+    .second-box .box-link .box-detail {
+        text-decoration: none;
+        color: black;
+        font-family: 'IranianSans';
+        font-size: small;
+        padding: 10px 0px;
+    }
+
+.shegeft-sugestion {
+    background-color: #ce4747;
+    height: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+    .shegeft-sugestion .item3 {
+        background-color: white;
+        height: 290px;
+        width: 191px;
+        margin: 5px auto;
+        text-align: center;
+    }
+
+        .shegeft-sugestion .item3 .third-box {
+            height: 280px;
+        }
+
+    .shegeft-sugestion .sugest-text {
+        background-color: #ce4747;
+    }
+
+    .shegeft-sugestion .item3 .box-link .sugest-text {
+        color: white;
+        font-size: xx-large;
+        font-family: 'IranianSans';
+        text-align: justify;
+    }
+
+    .shegeft-sugestion .item3 .box-link .box-imag3 {
+        width: 120px;
+        margin: 0px auto;
+    }
+
+    .shegeft-sugestion .item3 .box-link .box-detail {
+        text-decoration: none;
+        color: black;
+        font-family: 'IranianSans';
+        font-size: small;
+        text-align: justify;
+        padding: 20px 30px;
+    }
+
+    .shegeft-sugestion .item3 .box-link {
+        text-decoration: none;
+    }
+
+.head-boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+    .head-boxes .head-box {
+    }
+
+    .head-boxes .headbox-img {
+        width: 300px;
+        border-radius: 10px;
+    }
+
+.categories-shop {
+    margin: 5px auto;
+}
+
+    .categories-shop .category-shoptitle {
+        font-family: 'IranianSans';
+        margin: 30px auto;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .categories-shop .category-shopboxes {
+    }
+
+        .categories-shop .category-shopboxes .categoryshop-box {
+            margin: 20px auto;
+            display: flex;
+            width: 100%;
+            border: 1px solid red;
+        }
+
+            .categories-shop .category-shopboxes .categoryshop-box .category-singelitem {
+                margin: 5px auto;
+            }
+
+            .categories-shop .category-shopboxes .categoryshop-box .categoryshop-link {
+                text-decoration: none;
+                display: inline-block;
+            }
+
+                .categories-shop .category-shopboxes .categoryshop-box .categoryshop-link .categoryshop-imag {
+                    width: 90px;
+                }
+
+                .categories-shop .category-shopboxes .categoryshop-box .categoryshop-link .categoryshop-detail {
+                    color: black;
+                    font-family: 'IranianSans';
+                    font-size: x-small;
+                    font-weight: 600;
+                }
+
+.twoImg-comercial {
+    display: flex;
+}
+
+    .twoImg-comercial .comercial-img {
+        margin: 10px auto;
+        width: 48%;
+    }
+
+        .twoImg-comercial .comercial-img img {
+            border-radius: 15px;
+            width: 100%;
+        }
+
+.mahboob-brands {
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+}
+
+    .mahboob-brands .mahboob-title {
+        font-family: 'IranianSans';
+        font-weight: 900;
+        margin: 30px;
+        text-align: center;
+    }
+
+    .mahboob-brands .mahboob-crosel {
+    }
+
+        .mahboob-brands .mahboob-crosel .mahboob-box {
+            border-left: 1px solid #e1dfdf;
+            height: 130px;
+            margin: 11px;
+        }
+
+            .mahboob-brands .mahboob-crosel .mahboob-box .mahboob-link {
+            }
+
+                .mahboob-brands .mahboob-crosel .mahboob-box .mahboob-link .mahboob-imag {
+                    width: 110px;
+                    padding: 0px 10px;
+                    height: 120px;
+                }
+
+.mobileWatch-boxes {
+    border: 1px solid #e3e3e3;
+    border-radius: 12px;
+    margin: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        border: 1px solid #dedede;
+        position: relative;
+    }
+
+        .mobileWatch-boxes .mobileWatch-box .mobileWatch-title {
+        }
+
+            .mobileWatch-boxes .mobileWatch-box .mobileWatch-title h5 {
+                font-family: 'IranianSans';
+                text-align: right;
+                font-weight: 600;
+                font-size: medium;
+                margin: 20px;
+            }
+
+            .mobileWatch-boxes .mobileWatch-box .mobileWatch-title h6 {
+                font-family: 'IranianSans';
+                text-align: right;
+                font-weight: 400;
+                font-size: x-small;
+                margin: 5px 20px 20px;
+            }
+
+        .mobileWatch-boxes .mobileWatch-box .mobileWatch-img {
+            width: 120px;
+        }
+
+        .mobileWatch-boxes .mobileWatch-box .mobileWatch-link {
+            height: 35px;
+        }
+
+            .mobileWatch-boxes .mobileWatch-box .mobileWatch-link a {
+                text-decoration: none;
+                color: #19bfd3;
+                font-family: IranianSans;
+                font-size: small;
+                font-weight: 500;
+                position: absolute;
+                top: 387px;
+                left: 120px;
+            }
+
+.digiclub-boxes {
+    background-color: #007295;
+    border-radius: 12px;
+    display: flex;
+    height: 96px;
+    justify-content: flex-end;
+}
+
+    .digiclub-boxes .digiclubWhite-box {
+        float: right;
+        margin: 20px auto;
+    }
+
+    .digiclub-boxes .digiclub-box {
+        background-color: white;
+        margin: 10px auto;
+        border-radius: 12px;
+        font-family: 'IranianSans';
+        font-size: x-small;
+        font-weight: 600;
+        border: 1px solid red;
+        width: 18%;
+        height: auto;
+    }
+
+
+        .digiclub-boxes .digiclub-box .digiclub-title {
+        }
+
+        .digiclub-boxes .digiclub-box .digiclub-img {
+            border-radius: 12px;
+            width: 65%;
+        }
+
+.porforoosh-boxes {
+    border: 1px solid #cbcbde;
+    height: 400px;
+    border-radius: 12px;
+    margin: 20px auto;
+    position: relative;
+    width: 100%;
+}
+
+    .porforoosh-boxes .porforoosh-title {
+        font-family: IranianSans;
+        font-size: large;
+        font-weight: 600;
+        text-align: center;
+        border-radius: 12px;
+        padding: 15px;
+    }
+
+    .porforoosh-boxes .porforoosh-box .porforoosh-total {
+    }
+
+    .porforoosh-boxes .porforoosh-box .porforoosh-kala {
+        display: flex;
+        width: 300px;
+        height: 110px;
+        border-bottom: 1px solid #e4d9d9;
+    }
+
+        .porforoosh-boxes .porforoosh-box .porforoosh-kala .porforoosh-img {
+            width: 60px;
+            height: 60px;
+            margin: 10px;
+        }
+
+        .porforoosh-boxes .porforoosh-box .porforoosh-kala .porforoosh-detail {
+            font-family: IranianSans;
+            font-size: x-small;
+            text-align: right;
+            padding: 28px 20px;
+        }
+
+    .porforoosh-boxes .porforoosh-kala h4 {
+        color: blue;
+        padding: 30px 0px;
+    }
+
+    .porforoosh-boxes .porforoosh-link {
+        position: absolute;
+        top: 20px;
+        right: 1050px;
+        width: 8%;
+        border: 1px solid red;
+    }
+
+        .porforoosh-boxes .porforoosh-link a {
+            text-decoration: none;
+            font-family: 'IranianSans';
+            font-size: small;
+            font-weight: 600;
+        }
+
+.sunglases-rayban .rayban-gif {
+    width: 100%;
+}
+
+.takhfif-mahsool {
+    border: 1px solid #e0d8d8;
+    margin: 20px 0px;
+    border-radius: 12px;
+}
+
+    .takhfif-mahsool .takhfifMahsool-title {
+        font-family: 'IranianSans';
+        font-weight: 600;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes {
+    }
+
+        .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+            .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+                border: 1px solid #d4c2c2;
+            }
+
+
+                .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box span {
+                    font-size: small;
+                    line-height: 35px;
+                    text-align: center;
+                    display: inline-block;
+                    margin: 0px 48px;
+                }
+
+                .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box strike {
+                    font-size: small;
+                    line-height: 35px;
+                    text-align: center;
+                    display: inline-block;
+                    margin: 0px 64px;
+                }
+
+                .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box .takhfifMahsol-img {
+                    width: 60%;
+                    margin: 0px 32px;
+                }
+
+                .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box .takhfif-percent {
+                    width: 35px;
+                    background: #d32f2f;
+                    color: white;
+                    border-radius: 12px;
+                    text-align: center;
+                    font-size: small;
+                    font-weight: 600;
+                    margin: 10px auto;
+                }
+
+.read-articles {
+    position: relative;
+}
+
+    .read-articles .read-title {
+        font-family: 'IranianSans';
+        font-size: medium;
+        text-align: right;
+        line-height: 25px;
+        font-weight: 600;
+        margin: 20px 0px;
+    }
+
+    .read-articles .read-boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+        .read-articles .read-boxes .read-box {
+            border: 1px solid #e8e1e1;
+            border-radius: 12px;
+            height: 295px;
+            width: 311px;
+        }
+
+
+
+            .read-articles .read-boxes .read-box .read-img {
+                width: 100%;
+                margin: 0px auto;
+                border-top-left-radius: 12px;
+                border-top-right-radius: 12px;
+            }
+
+            .read-articles .read-boxes .read-box div {
+                font-family: 'IranianSans';
+                font-size: small;
+                text-align: right;
+                line-height: 25px;
+            }
+
+    .read-articles .read-link {
+        font-family: 'IranianSans';
+        font-size: small;
+        line-height: 25px;
+        position: absolute;
+        top: 7px;
+        left: 31px;
+        text-decoration: none;
+        color: #19bfd3;
+        font-weight: 500;
+    }
+
+.digikala-footer {
+    border-top: 1px solid #d9d9d9;
+    margin: 30px 0px;
+    position: relative;
+}
+
+    .digikala-footer .digifooter-img {
+        margin: 30px 0px 20px 1360px;
+    }
+
+    .digikala-footer .pasokhgoo-tel {
+        display: flex;
+        height: 70px;
+        justify-content: flex-start;
+    }
+
+        .digikala-footer .pasokhgoo-tel .telephone {
+            border-left: 2px solid #898585;
+            height: 26px;
+            font-family: 'IranianSans';
+            font-size: small;
+            padding: 0px 10px;
+        }
+
+    .digikala-footer .tahvil-bazgashts {
+        display: flex;
+        height: 155px;
+        justify-content: space-around;
+    }
+
+        .digikala-footer .tahvil-bazgashts .tahvil-bazgasht {
+        }
+
+            .digikala-footer .tahvil-bazgashts .tahvil-bazgasht .tahvil-img {
+            }
+
+        .digikala-footer .tahvil-bazgashts div {
+            font-family: 'IranianSans';
+            font-size: small;
+        }
+
+
+    .digikala-footer .footer-lists {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .digikala-footer .footer-lists .footer-list {
+            width: 350px;
+            text-align: right;
+            line-height: 31px;
+        }
+
+            .digikala-footer .footer-lists .footer-list .list-link {
+                text-decoration: none;
+                color: #9e9c9c;
+                font-family: 'IranianSans';
+                font-size: small;
+                font-weight: 600;
+            }
+
+
+
+
+    .digikala-footer .bazgasht-box .bazgasht-link {
+        text-decoration: none;
+        font-family: 'IranianSans';
+        font-size: small;
+        position: absolute;
+        top: 17px;
+        left: 50px;
+        border: 1px solid #a6a6a6;
+        color: gray;
+        display: inline-block;
+        width: 124px;
+        height: 35px;
+        padding: 7px;
+        border-radius: 10px;
+    }
+
+.footerblue-box {
+    background-color: #3c4b6d;
+    width: 90%;
+    height: 80px;
+    margin: 0px auto;
+    border-radius: 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .footerblue-box .bluebox-title {
+        display: flex;
+        margin: 15px auto;
+        height: 54px;
+        width: 359px;
+        justify-content: space-evenly;
+    }
+
+        .footerblue-box .bluebox-title img {
+            width: 50px;
+            height: 50px;
+            border-radius: 10px;
+        }
+
+        .footerblue-box .bluebox-title div {
+            color: white;
+            font-family: 'IranianSans';
+            font-size: large;
+            font-weight: 600;
+            width: 100%;
+            
+            text-align: right;
+        }
+
+    .footerblue-box .bluebox-img {
+        height: 48px;
+        width: 158px;
+        margin: 19px;
+    }
+
+    .footerblue-box .three-point {
+        width: 49px;
+        height: 45px;
+        border-radius: 7px;
+        padding: 11px;
+    }
+
+    .footerblue-box .bluebox-img img {
+    }
+
+.footer-description {
+    width: 85%;
+    border-top: 1px solid gray;
+    border-bottom: 1px solid gray;
+    height: 300px;
+    margin: 30px auto;
+    display: flex;
+    position: relative;
+}
+
+    .footer-description .digikala-note {
+    }
+
+        .footer-description .digikala-note .note-title {
+            text-align: justify;
+            margin: 10px 0px 10px 40px;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .footer-description .digikala-note .note-details {
+            text-align: justify;
+            margin: 10px 0px 10px 40px;
+            font-size: small;
+            line-height: 27px;
+        }
+
+        .footer-description .digikala-note .note-link {
+            text-decoration: none;
+            font-family: 'IranianSans';
+            font-size: smaller;
+            position: absolute;
+            display: inline-block;
+            width: 100px;
+            height: 20px;
+            top: 270px;
+            right: 33px;
+        }
+
+    .footer-description .note-brands {
+        display: flex;
+    }
+
+        .footer-description .note-brands .note-brand {
+            border: 1px solid #b9adad;
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            margin: 40px 6px;
+        }
+
+            .footer-description .note-brands .note-brand img {
+                width: 90px;
+                padding: 10px 2px 5px 8px;
+            }
+
+.lastpart-footer {
+    padding: 10px;
+    margin: 3px auto;
+    width: 60%;
+    font-family: 'IranianSans';
+    font-size: x-small;
+    color: #595656;
+    font-weight: 600;
+}
+
+.blunk-part {
+    height: 200px;
+    background-color: gray;
+}
+
+.mobile-nav {
+}
+
+    .mobile-nav .digikala-app {
+        display: flex;
+        justify-content: space-between;
+    }
+
+        .mobile-nav .digikala-app .app-logo {
+            display: flex;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+
+            .mobile-nav .digikala-app .app-logo img {
+                width: 50px;
+                border-radius: 8px;
+                height: 50px;
+            }
+
+            .mobile-nav .digikala-app .app-logo .app-title {
+                font-family: 'IranianSans';
+                font-size: medium;
+                padding: 11px 10px;
+                box-sizing: border-box;
+            }
+
+        .mobile-nav .digikala-app .app-botton {
+            margin: 26px;
+        }
+
+.mobile-nav .search-mobile {
+margin: 0px 10px 20px;
+border-bottom: 1px solid #d6d5d5;
+padding-bottom: 20px;
+}
+
+.mobile-nav .search-mobile .searchBox-mobile {
+background-color: #dcdbdb;
+border-radius: 29px;
+height: 60px;
+text-align: right;
+padding: 16px;
+}
+
+.mobile-nav .search-mobile .searchBox-mobile input {
+outline: none;
+background-color: #dcdbdb;
+border: none;
+}
+.footer-description .digikala-note .mobile-notedetails {
+text-align: justify;
+margin: 10px 0px 10px 40px;
+font-size: small;
+line-height: 27px;
+}
+.mobile-footer{
+
+
+margin:10px auto;
+
+}
+
+.mobile-footer .mobile-bazgashtbox{
+position:relative;
+
+height:30px;
+}
+
+.mobile-footer .mobile-bazgashtbox .mobile-bazgashtlink {
+text-decoration: none;
+font-family: 'IranianSans';
+font-size: small;
+position: absolute;
+top: 17px;
+left: 378px;
+color: gray;
+
+}
+    .mobile-footer .mobile-digikalaapp {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #e2dede;
+    }
+.mobile-footer .mobile-digikalaapp .app-logo {
+display: flex;
+margin: 20px;
+box-sizing: border-box;
+}
+.mobile-footer .mobile-digikalaapp .app-logo img {
+width: 50px;
+border-radius: 8px;
+height: 50px;
+}
+.mobile-footer .mobile-digikalaapp .app-logo .app-title {
+font-family: 'IranianSans';
+font-size: medium;
+padding: 11px 10px;
+box-sizing: border-box;
+}
+.mobile-footer .mobile-digikalaapp .app-botton {
+margin: 26px;
+}
+    .mobile-footer .card-title {
+        text-align: right;
+        font-family: IranianSans;
+        font-size: small;
+        text-decoration: none; 
+        color: black;
+        
+    }
+        .mobile-footer .card-title .card-list {
+            text-align: right;
+            font-family: IranianSans;
+            font-size: small;
+            text-decoration: none;
+            color: black;
+            line-height:25px;
+        }
+    /*smallest*/
+@media only screen and (max-width: 540px) {
+        .main-menu {
+        display: none;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .head-boxes .head-box {
+        flex-basis: 90%
+    }
+
+    .head-boxes .headbox-img {
+        width: 400px;
+        margin: 10px;
+    }
+
+    .twoImg-comercial {
+        display: block;
+    }
+
+        .twoImg-comercial .comercial-img {
+            margin: 20px auto 10px;
+            width: 85%;
+        }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        flex-basis: 90%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 45%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 90%;
+        margin: 20px auto;
+    }
+
+        .read-articles .read-boxes .read-box .read-img {
+            width: 100%;
+            margin: 0px auto;
+            height: auto;
+        }
+    .pc-footer{
+        display:none;
+    }
+        .mobile-footer {
+            display: block;
+        }
+    .ruler-container .categories-shop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .head-boxes {
+        justify-content: flex-start;
+    }
+
+        .head-boxes .head-box {
+            flex-basis: 45%
+        }
+
+        .head-boxes .headbox-img {
+            width: 500px;
+            margin: 10px;
+        }
+
+    .twoImg-comercial {
+        display: block;
+    }
+
+        .twoImg-comercial .comercial-img {
+            margin: 20px auto 10px;
+            width: 85%;
+        }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        flex-basis: 90%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 45%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 90%;
+        margin: 20px auto;
+    }
+
+        .read-articles .read-boxes .read-box .read-img {
+            width: 100%;
+            margin: 0px auto;
+            height: auto;
+        }
+    .pc-footer {
+        display: none;
+    }
+    .mobile-footer {
+        display: block;
+    }
+    .ruler-container .categories-shop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .head-boxes {
+        justify-content: flex-start;
+    }
+
+        .head-boxes .head-box {
+            flex-basis: 45%
+        }
+
+        .head-boxes .headbox-img {
+            width: 500px;
+            margin: 10px;
+        }
+
+    .twoImg-comercial {
+        display: block;
+    }
+
+        .twoImg-comercial .comercial-img {
+            margin: 20px auto 10px;
+            width: 85%;
+        }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        flex-basis: 45%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 45%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 45%;
+        margin: 20px auto;
+    }
+
+        .read-articles .read-boxes .read-box .read-img {
+            width: 100%;
+            margin: 0px auto;
+            height: auto;
+        }
+    .pc-footer {
+        display: none;
+    }
+    .footer-description .digikala-note .note-details {
+        display: none;
+    }
+
+    .mobile-notedetails {
+        display: block;
+    }
+    .mobile-footer {
+        display: block;
+    }
+    .ruler-container .categories-shop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1300px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .head-boxes {
+        justify-content: flex-start;
+    }
+
+        .head-boxes .head-box {
+            flex-basis: 45%
+        }
+
+        .head-boxes .headbox-img {
+            width: 400px;
+            margin: 10px;
+        }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        flex-basis: 45%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 30%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 45%;
+        margin: 20px auto;
+    }
+
+        .read-articles .read-boxes .read-box .read-img {
+            width: 100%;
+            margin: 0px auto;
+            height: auto;
+        }
+    .footer-description .digikala-note .note-details{
+        display:none;
+
+    }
+    .mobile-notedetails {
+        display: block;
+    }
+    .mobile-footer {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1413px) {
+    .main-menu {
+        display: none;
+    }
+
+    .mainMenu {
+        display: none;
+    }
+
+
+    .mobile-nav {
+        display: block;
+    }
+
+    .head-boxes {
+        justify-content: flex-start;
+    }
+
+        .head-boxes .head-box {
+            flex-basis: 45%
+        }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        flex-basis: 23%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 30%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 23%;
+    }
+    .footer-description .digikala-note .note-details {
+        display: none;
+    }
+    .mobile-notedetails {
+        display: block;
+    }
+    .mobile-footer {
+        display: none;
+    }
+}
+
+
+@media only screen and (min-width: 1414px) {
+    .main-menu {
+        display: block;
+    }
+
+    .mainMenu {
+        display: block;
+    }
+
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .head-boxes .head-box {
+        flex-basis: 23%
+    }
+
+    .mobileWatch-boxes .mobileWatch-box {
+        width: 24%;
+        flex-basis: 23%;
+    }
+
+    .takhfif-mahsool .takhfifMahsool-boxes .takhfif-kalarow .takhfifMahsool-box {
+        flex-basis: 30%;
+    }
+
+    .read-articles .read-boxes .read-box {
+        flex-basis: 23%;
+    }
+    .mobile-notedetails {
+        display: none;
+    }
+    .mobile-footer {
+        display: none;
+    }
+}
